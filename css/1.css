@@ -1,0 +1,72 @@
+body{
+    font-family: 'Baloo Bhai';
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    background: url("../assets/bike.jpg");
+}
+
+.left{  
+    display: inline-block;
+    border: 2px solid red;
+    position: absolute;
+  left: 34px;
+  top: 20px;
+}
+.left img{
+    align-items: center;
+    width: 110px;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    /* mix-blend-mode: multiply; */
+
+}
+.left div{
+    line-height: 20px;
+    font-size: 21px;
+    text-align: center;
+}
+
+.center{
+    display: block;
+    width: 50%;
+    margin: 20px auto;
+    border: 2px solid green;
+}
+
+.right{ 
+    position: absolute;
+    right: 34px;
+    top: 20px;
+    border: 2px solid yellow;
+}
+.navbar{
+    display: inline-block;
+}
+.navbar li{
+    display: inline-block;
+    font-size: 25px;
+}
+.navbar li a{
+    color: white;
+    text-decoration: none;
+    padding: 34px 23px;
+}
+.navbar li a:hover{
+    text-decoration: underline;
+    color: aqua;
+}
+.btn{
+    font-family: 'Baloo Bhai';
+    margin: 0px 9px;
+    padding: 4px 14px;
+    background-color: black;
+    color: white;
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+background-color: rgb(43, 41, 41);
+}
