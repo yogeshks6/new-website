@@ -1,72 +1,113 @@
-body{
-    font-family: 'Baloo Bhai';
-    color: white;
-    margin: 0px;
-    padding: 0px;
-    background: url("../assets/bike.jpg");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@300&display=swap");
+
+:root {
+    --primary : rgb(181, 2, 2);
+  }
+
+body {
+  font-family: "Baloo Bhai";
+  color: white;
+  margin: 0px;
+  padding: 0px;
+}
+.firstSection {
+  background: url("../assets/bike.jpg");
+  height: 900px;
 }
 
-.left{  
-    display: inline-block;
-    border: 2px solid red;
-    position: absolute;
-  left: 34px;
-  top: 20px;
+.left {
+  display: inline-block;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
 }
-.left img{
-    align-items: center;
-    width: 110px;
-    -webkit-filter: invert(100%);
-    filter: invert(100%);
-    /* mix-blend-mode: multiply; */
-
+.left img {
+  align-self: center;
+  width: 88px;
 }
-.left div{
-    line-height: 20px;
-    font-size: 21px;
-    text-align: center;
+.left div {
+  line-height: 17px;
+  font-size: 17px;
+  text-align: center;
+  color: #000;
 }
 
-.center{
-    display: block;
-    width: 50%;
-    margin: 20px auto;
-    border: 2px solid green;
+.navbar {
+  height: 100px;
+  background-color: rgba(255, 0, 0, 0.216);
+  display: flex;
 }
 
-.right{ 
-    position: absolute;
-    right: 34px;
-    top: 20px;
-    border: 2px solid yellow;
+.center {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-self: center;
+  align-self: center;
+  margin: 0px auto;
 }
-.navbar{
-    display: inline-block;
+
+.right {
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
-.navbar li{
-    display: inline-block;
-    font-size: 25px;
+.list {
+  display: inline-block;
 }
-.navbar li a{
-    color: white;
-    text-decoration: none;
-    padding: 34px 23px;
+.list li {
+  display: inline-block;
+  font-size: 25px;
 }
-.navbar li a:hover{
-    text-decoration: underline;
-    color: aqua;
+.list li a {
+  color: black;
+  text-decoration: none;
+  padding: 0px 23px;
 }
-.btn{
-    font-family: 'Baloo Bhai';
-    margin: 0px 9px;
-    padding: 4px 14px;
-    background-color: black;
-    color: white;
-    border: 2px solid grey;
-    border-radius: 10px;
-    font-size: 20px;
-    cursor: pointer;
+.list li a:hover {
+  color: var(--primary)
 }
-.btn:hover{
-background-color: rgb(43, 41, 41);
+.btn {
+  font-family: "Baloo Bhai";
+  margin: 0px 9px;
+  padding: 4px 14px;
+  background-color: black;
+  color: white;
+  border: 2px solid grey;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgb(43, 41, 41);
+}
+.container {
+  width: 747px;
+  font-size: 13px;
+  padding: 210px 50px 0px 50px;
+}
+.container > h2:hover {
+  color: white;
+  font-size: 20px;
+  transition: all;
+}
+.container h1 {
+  font-family: "Poppins", sans-serif;
+}
+.container h2 {
+  color: grey;
+  line-height: 34px;
+  word-spacing: 4px;
+  font-family: "Roboto", sans-serif;
+}
+.getStarted {
+  font-size: 26px;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 14px;
+  padding: 7px 14px;
+  transition: background-color 1s ease-out;
+}
+.getStarted:hover {
+  background-color: red;
 }
