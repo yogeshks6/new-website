@@ -26,7 +26,7 @@ body {
   padding: 0px;
 }
 .firstSection {
-  background: url("../assets/bike.jpg");
+  background: url("bike.jpg");
   height: 900px;
 }
 
@@ -135,7 +135,6 @@ body {
   content: "";
   width: 0px;
   height:50px;
-  background-color: rgb(255, 255, 255);
   position:absolute;
   left: -2px;
   top: -2px;
@@ -148,6 +147,14 @@ body {
     background-color: rgba(255, 255, 255, 0.5);
     transition-duration: .5s;
     visibility:visible;
+    cursor: pointer;
+}
+
+
+
+.secondSection{
+  background-color: white;
+  color: black;
 }
 
 
@@ -158,7 +165,3 @@ body {
 
 
 
-
-.getStarted:hover {
-  background-color: red;
-}
