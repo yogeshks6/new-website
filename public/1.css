@@ -1,29 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@300&display=swap");
 
-
-@keyframes rotate{
-  0%{
-      transform: rotate(0deg);
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
   }
-  50%{
-      transform: rotate(180deg);
+  50% {
+    transform: rotate(180deg);
   }
-  100%{
-      transform: rotate(360deg);
+  100% {
+    transform: rotate(360deg);
   }
 }
 
-
-
 :root {
-    --primary : rgb(181, 2, 2);
-  }
+  --primary: rgb(181, 2, 2);
+}
 
 body {
   font-family: "Baloo Bhai";
   color: white;
   margin: 0px;
   padding: 0px;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 .firstSection {
   background: url("bike.jpg");
@@ -36,13 +36,12 @@ body {
   display: flex;
   flex-direction: column;
 }
-.left>img {
+.left > img {
   align-self: center;
   width: 88px;
 }
-.left>img:hover{
+.left > img:hover {
   animation: rotate 1s linear;
-
 }
 .left div {
   line-height: 17px;
@@ -67,9 +66,9 @@ body {
 }
 
 .right {
- display: flex;
- justify-content: center;
- align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .list {
   display: inline-block;
@@ -84,7 +83,7 @@ body {
   padding: 0px 23px;
 }
 .list li a:hover {
-  color: var(--primary)
+  color: var(--primary);
 }
 .btn {
   font-family: "Baloo Bhai";
@@ -101,23 +100,26 @@ body {
   background-color: rgb(43, 41, 41);
 }
 .container {
-  width: 747px;
+  width: 40%;
   font-size: 13px;
   padding: 210px 50px 0px 50px;
 }
 .container > h2:hover {
   color: white;
-  font-size: 20px;
   transition: all;
+  transform: scale(1.05);
 }
-.container h1 {
+.container > h1 {
   font-family: "Poppins", sans-serif;
+  text-align: justify;
 }
-.container h2 {
+.container > h2 {
   color: grey;
   line-height: 34px;
   word-spacing: 4px;
   font-family: "Roboto", sans-serif;
+  transition: all 0.2s ease-in;
+  text-align: justify;
 }
 .getStarted {
   font-size: 26px;
@@ -134,8 +136,8 @@ body {
 .getStarted::before {
   content: "";
   width: 0px;
-  height:50px;
-  position:absolute;
+  height: 50px;
+  position: absolute;
   left: -2px;
   top: -2px;
   border-radius: 14px;
@@ -143,58 +145,139 @@ body {
 }
 
 .getStarted:hover::before {
-    width: 200px;
-    background-color: rgba(255, 255, 255, 0.5);
-    transition-duration: .5s;
-    visibility:visible; 
-    cursor: pointer;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition-duration: 0.5s;
+  visibility: visible;
+  cursor: pointer;
 }
 
-.section2{
-  background-color: rgba(128, 128, 128, 0.193);
+.section2 {
+  background-color: rgba(190, 190, 190, 0.193);
   padding: 100px 0px;
   color: black;
   display: flex;
-  justify-content: space-evenly ;
+  justify-content: space-evenly;
 }
-.section2Left{
+.section2Left {
+  font-size: larger;
   border-radius: 20px;
   background-color: white;
   flex-wrap: wrap;
   padding: 14px 63px;
   justify-content: center;
   display: flex;
-  width: 20%;
-  border: 2px solid red;
+  width: 30%;
+  box-shadow: -2px 1px 18px -8px rgba(54, 54, 54, 1);
 }
-.section2Right{
+.section2Right {
   border-radius: 20px;
+  font-size: larger;
   background-color: white;
   flex-wrap: wrap;
   padding: 14px 63px;
   justify-content: center;
   display: flex;
-  width: 20%;
-  border: 2px solid green;
+  width: 30%;
+  box-shadow: -2px 1px 18px -8px rgba(54, 54, 54, 1);
 }
-.imageAndText>img{
-    width: 144px;
-  height: 124px;
+.imageAndText > img {
+  width: 200px;
+  height: 170px;
   background-color: rgba(137, 43, 226, 0.479);
+  transition: all 0.2s ease-in-out;
+  border-radius: 25px;
 }
-.imageAndText{
+.imageAndText {
   margin: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.imageAndText:hover{
-  color: var(--primary) 
+.imageAndText:hover {
+  color: var(--primary);
+}
+.off {
+  font-size: xx-large;
+  text-align: center;
+}
+.imageAndText:hover {
+  position: relative;
+  transition: width;
+}
+.imageAndText:hover > img {
+  transform: scale(1.3);
+}
+.imageAndText:hover > span {
+  visibility: hidden;
 }
 
+.section3 {
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+.section3center {
+  font-size: 60px;
+  text-align: center;
+}
+.section3left {
+  display: flex;
+  flex-direction: column;
+  width: 19%;
+  font-size: larger;
+}
+.picAndtext {
+  border-radius: 25px;
+  width: 300px;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  margin: 20px 24px;
+}
+.middle {
+  display: flex;
+  justify-content: center;
+}
 
+.picAndtext>img{
+  background-color: rgba(137, 43, 226, 0.479);
+  border-radius: 25px;
+  width: 280px;
+  height: 300px;
+  transition: all 0.2s ease-in-out;
+}
+.picAndtext:hover > img{
+  transform: scale(1.3);
+ background-color: aqua;
+}
+.picAndtextright > img {
+  width: 1100px;
+  height: 635px;
+  margin: 30px 30px;
+}
 
-
-
-
-
+.show{
+  color: rgb(32, 136, 196);
+  margin-left: 1570px;
+  font-size: x-large;
+}
+.show:hover{
+ color: rgb(236, 101, 101);
+ text-decoration: underline;
+ cursor: pointer;
+}
+.footer{
+  border: 2px solid black;
+  color: #000;
+}
+.footerimg>img{
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  margin-left: 328px;
+  margin-top: 115px;
+  
+}
