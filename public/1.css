@@ -265,18 +265,84 @@ body::-webkit-scrollbar {
   font-size: x-large;
 }
 .show:hover {
+  transition: all;
+  transform: scale(1.05);
   color: rgb(236, 101, 101);
   text-decoration: underline;
   cursor: pointer;
 }
 .footer {
-  border: 2px solid black;
+  background-color:rgba(255, 0, 0, 0.216);
+  display: flex;
+  justify-content: center;
+ margin-top: 368px;
   color: #000;
 }
 .footerimg > img {
   width: 200px;
   height: 200px;
   border-radius: 100%;
-  margin-left: 328px;
-  margin-top: 115px;
+  margin-top: 150px;
+}
+.footerimg > img:hover{
+  transition: all;
+  transform: scale(1.19);
+}
+.profile{
+  color: #000;
+margin-top: 100px;
+margin-left: 70px;
+font-size: xx-large;
+}
+.profile>div{
+  text-decoration: underline double 2px red;
+}
+#insta>img{
+width: 130px;
+height: 90px;
+}
+#facebook>img{
+  width: 83px;
+  height: 75px;
+  margin-left: 23px;
+}
+#twitter>img{
+  width: 72px;
+  height: 66px;
+  margin-left: 30px
+}
+#insta>img:hover{
+  transition: all;
+  transform: scale(1.09);
+}
+#facebook>img:hover{
+  transition: all;
+  transform: scale(1.09);
+}
+#twitter>img:hover{
+  transition: all;
+  transform: scale(1.09);
+}
+.address{
+  display: flex;
+  flex-direction: column;
+color: #000;
+margin-top: 115px;
+margin-left: 10px;
+}
+.address>div>img{
+
+width: 26px;
+height: 20px;
+margin-right: -26px;
+margin-left: 4px;
+margin-top: 33px;      
+}
+.address>div>span{
+  font-size: x-large;
+  margin-left: 38px;
+  word-spacing: 9px;
+}
+.address>div>span:hover{
+  font-size: 25px;
 }
