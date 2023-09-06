@@ -284,10 +284,6 @@ body::-webkit-scrollbar {
   border-radius: 100%;
   margin-top: 150px;
 }
-.footerimg > img:hover{
-  transition: all;
-  transform: scale(1.19);
-}
 .profile{
   color: #000;
 margin-top: 100px;
@@ -297,29 +293,29 @@ font-size: xx-large;
 .profile>div{
   text-decoration: underline double 2px red;
 }
-#insta>img{
+#insta>a>img{
 width: 130px;
 height: 90px;
 }
-#facebook>img{
+#github>a>img{
   width: 83px;
   height: 75px;
   margin-left: 23px;
 }
-#twitter>img{
+#twitter>a>img{
   width: 72px;
   height: 66px;
   margin-left: 30px
 }
-#insta>img:hover{
+#insta>a>img:hover{
   transition: all;
   transform: scale(1.09);
 }
-#facebook>img:hover{
+#github>a>img:hover{
   transition: all;
   transform: scale(1.09);
 }
-#twitter>img:hover{
+#twitter>a>img:hover{
   transition: all;
   transform: scale(1.09);
 }
@@ -342,7 +338,4 @@ margin-top: 33px;
   font-size: x-large;
   margin-left: 38px;
   word-spacing: 9px;
-}
-.address>div>span:hover{
-  font-size: 25px;
 }
